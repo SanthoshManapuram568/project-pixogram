@@ -1,0 +1,54 @@
+<div class="container">
+<div class="row">
+    <div class="col-sm-3 mt-2">
+        <div class=" d-flex justify-content-start">
+            <img width="80x"  style="border-radius: 10% " src="assets/img/logo4.png"   alt="logo">
+        </div> 
+    </div>
+    <div *ngIf="auth.isUserLoggedIn()" class=" mt-4 col-sm-5">
+        <nav>
+            <ul class="nav  nav-tab nav-justified">
+                <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+                    <a class="effect nav-link p-1 btn " [routerLink]="['/upload']">Upload Media</a>
+                </li> 
+                <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+                    <a class="ml-1 effect nav-link p-1 btn " [routerLink]="['/mymedia']">MyMedia</a>       
+                </li>
+                <li *ngIf="auth.isUserLoggedIn()" class="nav-item">
+                    <a class="ml-1 effect nav-link p-1 btn " [routerLink]="['/follow']">Follower/Followers</a>
+                </li> 
+            </ul>
+        </nav>
+    </div>
+    <div *ngIf="!auth.isUserLoggedIn()" class="min-pixo col-sm-5 mt-4">
+        <h1 style="color: white;">Pixogram</h1>
+    </div>
+    <div *ngIf="!auth.isUserLoggedIn()" class="col-sm-5">
+        <svg class="svg" viewBox="80 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">PixoGram</text>
+            </symbol>
+        
+            <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+        </div>
+   
+    
+
+    <div class="offset-1  mt-4 col" >
+        <div *ngIf="!auth.isUserLoggedIn()"  class="d-flex ">
+            <button [routerLink]="['/news-feeds']" style="background-color:rgb(228, 21, 21);" [disabled]="!auth.isUserLoggedIn()" type="button" class="p-1 btn  w-50">Account</button>
+        </div>
+        <div *ngIf="auth.isUserLoggedIn()"  class="d-flex ">
+            <button [routerLink]="['/news-feeds']" style="font-size:vw;"  type="button" class="p-1 btn btn-primary  w-50">Account</button>
+        </div>
+        
+    </div>
+</div>
+</div>

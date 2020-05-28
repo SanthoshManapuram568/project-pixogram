@@ -1,0 +1,44 @@
+<div class="container mt-5 mb-5">
+     <div class="row mt-4">
+       <aside class="col-sm-3 mr-10">
+    </aside> 
+         <aside class="col-sm-6">
+             <div class="row">
+                 <div class="col-9 ">
+                     <h3 style="color:black">Username : {{username}}</h3>
+                 </div>
+                 <div class="col-3">
+ 
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col-9 card ">
+                    <img class="card-img-top" [src]="profileImg" alt="Card image">
+                </div>
+             </div>
+         </aside>
+     </div>
+     
+         <section class=" offset-3 col-sm-6 mt-5">
+             <div class="row mt-4">
+                 <div class="col-9"> 
+                 <textarea class="form-control"readonly>{{fullName}}</textarea>
+                 </div>
+             </div>
+             <div class="row mt-4">
+                 <div class="col-9">
+                    <textarea class="form-control"readonly>{{email}}</textarea>
+                 </div>
+             </div>
+             <div class="row mt-4">
+                <div class="col-9"> 
+             <!--<button value="{{profile.userId}}" *ngIf="profile.followed" (click)="doUnFollow(userid)" #userid>Unfollow</button>
+             <button value="{{profile.userId}}" *ngIf="!profile.followed" (click)="doFollow(userid)" #userid>Follow</button>
+             --></div>
+            </div> 
+     </section>
+ </div>
+            
+         
+     
+ 

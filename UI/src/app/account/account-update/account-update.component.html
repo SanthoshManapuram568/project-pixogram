@@ -1,0 +1,82 @@
+<div class="container mt-5">
+    <form [formGroup]="myFormGroup"  (ngSubmit)="reReg()">
+    <div class="row">
+        <aside class="col-sm-3 mr-10">
+            <div  class="mr-5">
+                <div class="row justify-content-center mb-2">
+                    <p>Account</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="p-2">
+                    <button style="background-color: whitesmoke;" type="button" [routerLink]="['/news-feeds']" class="btn w-75 ">News feed</button>
+                </div>
+                <div class="p-2">
+                    <button style="background-color: whitesmoke;" type="button" class="btn w-75 "[routerLink]="['/blocked-accounts']" >Blocked Contacts</button>
+                </div>
+                <div class="p-2">
+                    <button style="background-color: whitesmoke;" type="button" class="btn w-75" [routerLink]="['/search']">Search</button>
+                </div>
+                <div class="p-2">
+                    <button style="background-color: whitesmoke;" type="button" class="btn w-75"[routerLink]="['/logout']" (click)="message()">Logout</button>
+                </div>
+            </div>
+  
+        </aside> 
+        <section class="col-sm-9">
+          <div>
+                  <div class="form-group row">
+                      <label for="username" class="col-sm-3">User Name</label>
+                      <div class="col-sm-3">
+                          <input type="text" name="uname" [formControl]="myFormGroup.controls['username']" class="form-control form-control-sm">
+                      </div>
+                      <div class="col-sm-3">
+                    
+                      </div>
+                      <div class="col-sm-3">
+  
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3">Password</label>
+                      <div class="col-sm-3">
+                          <input type="password" name="pass" [formControl]="myFormGroup.controls['password']" class="form-control form-control-sm" id="password">
+                      </div>
+                      <div class="col-sm-6">
+  
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3">RepeatPassword</label>
+                      <div class="col-sm-3">
+                          <input type="password" name="repass" [formControl]="myFormGroup.controls['repassword']" class="form-control form-control-sm" id="Rpasword" >
+                      </div>
+                      <div class="col-sm-6">
+  
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label class="col-sm-3">Email</label>
+                      <div class="col-sm-3">
+                          <input type="email" name="email" [formControl]="myFormGroup.controls['email']" class="form-control form-control-sm" id="pasword">
+                      </div>
+                      <div class="col-sm-6">
+  
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <div class="col-sm-3">
+                      </div>
+                      <div class="col-sm-3">
+                          <input type="submit" style="background-color: whitesmoke;" class="form-control form-control-sm btn " value="Update">
+                      </div>
+                      <div class="col-sm-6">
+                      </div>
+                  </div>
+          </div> 
+      </section>
+     
+    </div>
+</form>
+  </div>
+  

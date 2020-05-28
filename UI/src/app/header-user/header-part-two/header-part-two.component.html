@@ -1,0 +1,15 @@
+<div class="container">
+<header class="row mt-4">
+    <div *ngIf="auth.isUserLoggedIn()"  class="col-sm-3 mt-4">
+        <div class=" d-flex justify-content-start mt-4">
+        <a [routerLink]="['/mymedia']" ><img  width="80" style="border-radius: 10%" [src]="profileImg"  alt="profile"></a>
+        </div>
+    </div>
+    <div *ngIf="auth.isUserLoggedIn()" class="offset-1 mt-2 col-sm-8">
+        <div class="row">
+        <h3 >Welcome :</h3>
+        <h3 style="color:white; font-style: times new roman;" class=" username col-6">{{username}}</h3>
+    </div>
+    </div>
+</header>
+</div>

@@ -1,0 +1,76 @@
+<div class="container mt-5 mb-5">
+ 
+    <div class="row mt-4">
+      <aside class="col-sm-3 mr-10">
+   </aside> 
+        <aside class="col-sm-6">
+            <div class="row">
+               
+                <div class="col-9 ">
+                    <h3 style="color:black">Title : {{file.title}}</h3>
+                </div>
+                <div class="col-3">
+
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-9 card ">
+                   <img class="card-img-top" [src]="file.url" alt="Card image">
+               </div>
+            </div>
+        </aside>
+    </div>
+    
+        <section class=" offset-3 col-sm-6 mt-5">
+            <div class="row mt-4">
+                <div class="col-9">
+                    <p>Discription : </p> 
+                <textarea class="form-control" readonly >{{file.description}}</textarea>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-9">
+                    <p>Tags : </p> 
+                    <textarea class="form-control" readonly >{{file.tags}}</textarea>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-2">
+
+                </div>
+                <div class="col-3">
+                    <i  style="font-size:36px ; color: white;"  aria-hidden="true" class="fa">&#xf087; {{file.likes}}</i>
+                </div>
+                <div class="col-3">
+                    <i  style="font-size:36px ; color: white;" aria-hidden="true" class="fa">&#xf165; {{file.unlikes}}</i>
+                </div>
+            </div>
+            <!-- <div class="row mt-4">
+               <div class="col-9"> 
+              <h4 style="color: gold;">Comments : </h4>
+                </div>
+            </div>
+           <div class="row mt-4">
+               <div class="col-9 d-flex justify-content-center">
+                   <textarea class="form-control" placeholder="aswesom click.."></textarea>
+               </div>
+               <div class="col-sm-3 d-flex justify-content-start">
+                   <div class="btn-group-vertical btn-group-sm">
+                       <button   class=" effect1 btn px-3">Reply</button>
+                       <button  class=" effect2 btn  px-3">Like</button>
+                       <button   class="effect3 btn  px-3">Dislike</button>
+                       <button  class="effect4 btn  px-3">Delete</button>
+                     </div>
+               </div>
+            </div>
+            <div class="row mt-5 justify-content-start">
+                <div class="col-9">
+                <button  [routerLink]="['/mymedia']"class=" effect btn btn-block px-3">Save</button>
+                </div>
+            </div>
+            -->
+    </section>
+</div>
+           
+        
+    

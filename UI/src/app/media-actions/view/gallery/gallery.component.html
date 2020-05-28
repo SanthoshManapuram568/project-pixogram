@@ -1,0 +1,15 @@
+<div class="container">
+    <div  class="row mt-4">
+        <div *ngFor="let image of medialist" class="card-deck text-center">
+            <div class="card mx-5 my-3" >
+                <img [src]="image.url" alt="Media Picture" class="card-img-top"  (click)="getDetails(image.id)" style="width: 200px;height: 200px;" >
+                    <div class="card-body" style="background-color:white ;">
+                        <h6>Title : {{image.title}}</h6>
+                        <h6>Comments : {{image.comments}}</h6>
+                        <h6>Likes : {{image.likes}}</h6>
+                        <h6>Dislikes : {{image.disLikes}}</h6>
+                    </div>  
+            </div>
+        </div>
+    </div>
+</div>                 

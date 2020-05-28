@@ -1,0 +1,88 @@
+{
+  "user-details": [
+    {
+      "username": "prasad",
+      "password": "1234",
+      "rePassword": "1234",
+      "email": "prasad@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "sk",
+      "password": "123",
+      "rePassword": "123",
+      "email": "sk",
+      "id": 2
+    },
+    {
+      "username": "anil",
+      "password": "1234",
+      "rePassword": "1234",
+      "email": "anil@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "abcd",
+      "password": "1234",
+      "rePassword": "1234",
+      "email": "dfgdsgdfh",
+      "id": 4
+    },
+    {
+      "username": "qwe",
+      "password": "123",
+      "rePassword": "123",
+      "email": "sdfsd",
+      "id": 5
+    },
+    {
+      "username": "rty",
+      "password": "123",
+      "rePassword": "123",
+      "email": "sdfsdf",
+      "id": 6
+    },
+    {
+      "username": "def",
+      "password": "def",
+      "rePassword": "def",
+      "email": "def",
+      "id": 7
+    },
+    {
+      "username": "fgh",
+      "password": "fgh",
+      "rePassword": "fgh",
+      "email": "fgh",
+      "id": 8
+    },
+    {
+      "username": "zxc",
+      "password": "zxc",
+      "rePassword": "zxc",
+      "email": "zxc",
+      "id": 9
+    },
+    {
+      "username": "cvb",
+      "password": "cvb",
+      "rePassword": "cvb",
+      "email": "cvb",
+      "id": 10
+    },
+    {
+      "username": "asd",
+      "password": "asd",
+      "rePassword": "asd",
+      "email": "asd",
+      "id": 11
+    },
+    {
+      "username": "dfg",
+      "password": "dfg",
+      "rePassword": "dfg",
+      "email": "dfg",
+      "id": 12
+    }
+  ]
+}

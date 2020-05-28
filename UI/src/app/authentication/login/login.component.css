@@ -1,0 +1,48 @@
+/*
+   .link{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, rgb(201, 223, 6), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+*/
+
+.login{
+    font-size: 100%;
+  }
+.register{
+  width: 10px;
+  padding: 10px;
+  /*border: 5px solid black;*/
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+.register:hover {
+  background: #2196F3;
+  color: white;
+}
+.register:active {
+  background-color: gold;
+  transform: translateY(4px);
+}
+
+
+

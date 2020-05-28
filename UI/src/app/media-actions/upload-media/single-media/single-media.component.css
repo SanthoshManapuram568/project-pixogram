@@ -1,0 +1,21 @@
+.effect {
+    cursor: pointer;
+    color:black;
+    background-color:gold;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #994d00;
+  }
+  
+  .effect:hover {
+            background-color: blue;
+            color: white;     
+            box-shadow: 0 9px black;   }
+  
+  .button:active {
+    background-color: blue;
+    transform: translateY(4px);
+  }
+  .label{
+    color: white;
+  }
